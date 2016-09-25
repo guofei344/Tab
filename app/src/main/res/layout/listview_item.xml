@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <!--imageview头像-->
+        <com.github.snowdream.android.widget.SmartImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/widget_dface"/>
+        <!--另一半的标题，文字等等-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            >
+            <!--姓名-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你的姓名"/>
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你的发表的言论"
+                android:maxLines="4"/>
+            <com.github.snowdream.android.widget.SmartImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_pht"
+                android:visibility="gone"/>
+            <include layout="@layout/list_item_com"/>
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_good"
+                android:text="某某觉得很赞"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
